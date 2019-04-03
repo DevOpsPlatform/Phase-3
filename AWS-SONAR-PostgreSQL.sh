@@ -91,6 +91,9 @@ sudo unzip sonarqube-6.7.6.zip -d /opt
 #Rename the directory
 sudo mv /opt/sonarqube-6.7.6 /opt/sonarqube
 
+#Give ownership to sonar user on /opt/sonarqube
+sudo chown -R sonar:sonar /opt/sonarqube
+
 #Update the sonar.sh file with below user name
 vi /opt/sonarqube/bin/linux-x86-64/sonar.sh
 #RUN_AS_USER=sonar
