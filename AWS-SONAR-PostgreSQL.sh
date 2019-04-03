@@ -1,6 +1,6 @@
 #Refer: https://www.howtoforge.com/how-to-install-sonarqube-on-ubuntu-1804/
 
-#This has been tested on t2.medium - Ubuntu Server 16.04
+#This has been tested on t2.medium - Ubuntu Server 16.04 - Storage 10 GB
 
 #Please refer AWS-SONAR-PostgreSQL-installation.doc in case if you have doubts with the below steps.
 
