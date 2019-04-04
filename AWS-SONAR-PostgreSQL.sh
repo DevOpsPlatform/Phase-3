@@ -118,6 +118,11 @@ sonar.jdbc.url=jdbc:postgresql://localhost/sonar
 sonar.web.host=0.0.0.0
 sonar.search.javaOpts=-Xms512m  -Xmx512m
 '
+echo 'Run the below commands to start and stop the sonar service'
+/opt/sonarqube/bin/linux-x86-64/sonar.sh start
+/opt/sonarqube/bin/linux-x86-64/sonar.sh stop
+
+echo "Or add sonar as a service as mentioned below"
 
 #Configure Systemd service whenever system restarted, soanr will automatically started.
 #To this, create a file and paste the snippet as followed.
