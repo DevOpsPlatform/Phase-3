@@ -116,17 +116,14 @@ sudo vi /opt/sonarqube/conf/sonar.properties
 #Find the following lines.
 #sonar.jdbc.username=
 #sonar.jdbc.password=
+#sonar.jdbc.url=jdbc:postgresql://localhost/sonar
 
 #Uncomment and provide the PostgreSQL username and password of the database that we have created earlier. It should look like:
 
 echo'
 sonar.jdbc.username=sonar
 sonar.jdbc.password=sonar
-'
-echo'
-Find the link and uncomment, save the file and exit from the editor.:
 sonar.jdbc.url=jdbc:postgresql://localhost/sonar
-
 sonar.web.host=0.0.0.0
 sonar.search.javaOpts=-Xms512m  -Xmx512m
 '
