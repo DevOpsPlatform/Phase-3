@@ -68,6 +68,18 @@ CREATE DATABASE sonar OWNER sonar;
 #Exit from the psql shell:
 \q
 
+echo ' connect to db and check the tables
+su – postgres
+psql
+\connect sonar
+\dt
+
+select * from projects;
+select * from users;
+select * from project_links;
+
+'
+
 #Switch back to the sudo user by running the 'exit' command.
 
 #=========================DB INSTALLATION END===============================================#
