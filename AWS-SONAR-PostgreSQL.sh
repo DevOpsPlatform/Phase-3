@@ -131,6 +131,14 @@ echo 'Run the below commands to start and stop the sonar service'
 /opt/sonarqube/bin/linux-x86-64/sonar.sh start
 /opt/sonarqube/bin/linux-x86-64/sonar.sh stop
 
+#Launch the url http://<publicIP>:9000
+
+echo'
+default username & passwd are
+uname: admin
+paswd: admin
+' 
+
 echo "Or add sonar as a service as mentioned below"
 
 #Configure Systemd service whenever system restarted, soanr will automatically started.
