@@ -18,6 +18,10 @@ Step-6: Run the maven command
 
       mvn clean package org.codehaus.mojo:sonar-maven-plugin:3.7.0.1746:sonar
       
+      or - without updating pom.xml file
+      
+      mvn clean install org.codehaus.mojo:sonar-maven-plugin:3.7.0.1746:sonar -Dsonar.projectKey=groupId:artifactId -Dsonar.host.url=http://localhost:9000 -Dsonar.login=loginHASH -Dsonar.sources=src/main/java/ -Dsonar.java.binaries=target/classes
+      
       
 Sample project: https://github.com/venkatasykam/DevOpsWebApp/blob/web/pom.xml
             
