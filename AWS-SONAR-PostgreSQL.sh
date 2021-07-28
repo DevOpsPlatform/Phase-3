@@ -18,13 +18,8 @@ sudo apt-get upgrade -y
 
 #=========================JAVA INSTALLATION START===============================================#
 
-#Add the Oracle Java repository on the server by running.
-sudo add-apt-repository ppa:webupd8team/java
-
-sudo apt-get update -y
-
-#Install Oracle JDK, select OK, and then YES when ever a window will be prompted.
-sudo apt-get install oracle-java8-installer -y
+#Install Java repository on the server by running.
+apt install openjdk-8-jdk -y
 
 java -version
 
@@ -92,7 +87,7 @@ sudo -i
 sudo adduser sonar
 
 #Download the SonarQube installer files archive. You can find all the versions of SONAR here  https://www.sonarqube.org/downloads/
-wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-6.7.6.zip
+wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.0.1.46107.zip
 
 #Install unzip
 apt-get -y install unzip
