@@ -69,14 +69,15 @@ Step-4: Install maven on Jenkins
 Step-5: Configure job in jenkins
 
       New Item >> Pipeline >> copy and paste the below snippet in Job configuration
-      
----
+
+
+![image](https://user-images.githubusercontent.com/24622526/127778001-20dcb45d-8787-4739-abcd-338946b87cff.png)
 
       pipeline {
           agent any
 
             tools {
-                        maven "maven-3.8.1"
+                maven "maven-3.8.1"
             }
 
           stages {
