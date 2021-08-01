@@ -102,4 +102,32 @@ Step-5: Configure job in jenkins
           }
       }
 
-Step-6: Run the Jenkins job  
+Step-6: Run the Jenkins job with default sonar quality gates
+
+![image](https://user-images.githubusercontent.com/24622526/127778246-82cc7d9e-99d9-44fc-8a77-c951d0022ad3.png)
+
+
+Create our own quality gates. Sonar >> Quality Gates >> Create
+
+
+![image](https://user-images.githubusercontent.com/24622526/127778354-154c1f28-b21a-40eb-9864-4229f68104c3.png)
+
+![image](https://user-images.githubusercontent.com/24622526/127778377-e93601a5-6d7c-475a-a54b-f52ea131419b.png)
+
+
+Add some rules by click on "Add Condition" 
+
+![image](https://user-images.githubusercontent.com/24622526/127778410-b2e8f367-fd4e-4c31-b67a-10522f80794e.png)
+
+![image](https://user-images.githubusercontent.com/24622526/127778439-6659aecb-bb9e-4176-b8ef-6068caa605ee.png)
+
+
+![image](https://user-images.githubusercontent.com/24622526/127778479-aebff7af-365b-4b36-a8f7-5a78f2e95f90.png)
+
+Update it as "Default" one
+
+![image](https://user-images.githubusercontent.com/24622526/127778484-f204d46e-8bc7-448b-8dd3-de45619e7093.png)
+
+
+
+
