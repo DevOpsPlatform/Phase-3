@@ -70,9 +70,6 @@ Step-4: create webhook
 ![image](https://user-images.githubusercontent.com/24622526/127778902-84936604-796e-4b23-b9ce-8ba2fca75225.png)
 
 
-
-      
-
 Step-5: Install maven on Jenkins
 
       Maven Jenkins >> Global Tool Configuration >> Maven >> Add Maven 
@@ -122,6 +119,8 @@ Step-7: Run the Jenkins job with default sonar quality gates
 ![image](https://user-images.githubusercontent.com/24622526/127778246-82cc7d9e-99d9-44fc-8a77-c951d0022ad3.png)
 
 ![image](https://user-images.githubusercontent.com/24622526/127778551-2b30626e-e2a4-4800-8b36-cc1edb357065.png)
+
+![image](https://user-images.githubusercontent.com/24622526/127779600-4535673b-dcbc-46c4-8293-447a71fd0f34.png)
 
 
 Create our own quality gates. Sonar >> Quality Gates >> Create
