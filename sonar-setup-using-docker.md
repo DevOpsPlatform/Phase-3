@@ -57,9 +57,18 @@ Step-2: Install sonarqube scanner plugin
 
 Step-3: Configure Sonar in Jenkins
 
-      Manage Jenkins >> Configure System >> SonarQube servers
+      (Optional) Generate api token from sonar admin user. Login to Sonar > User Icon > My Account > Security >  give any name ex: jenkinssonar  > Generate > copy the token 
+
+ ![image](https://user-images.githubusercontent.com/24622526/127779787-7b5e4217-5c9e-40e9-a5ff-ed91db532a28.png)
+
+add the token to Jenkins > Manage Jenkins > Manage Credentials > Jenkins > Global Credentials > Add Credentials > 
+
+![image](https://user-images.githubusercontent.com/24622526/127779880-de9b9b0f-828d-4b80-af0c-eda89014c754.png)
+ 
+      Manage Jenkins >> Configure System >> SonarQube servers 
       
-![image](https://user-images.githubusercontent.com/24622526/127777517-aa234189-a9f4-435c-91e3-372eb60f5197.png)
+![image](https://user-images.githubusercontent.com/24622526/127779758-99981b16-d7e7-4eaf-bc5a-16f2395e84df.png)
+      
 
 Step-4: create webhook
 
