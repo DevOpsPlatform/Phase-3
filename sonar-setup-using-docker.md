@@ -106,6 +106,8 @@ Step-6: Run the Jenkins job with default sonar quality gates
 
 ![image](https://user-images.githubusercontent.com/24622526/127778246-82cc7d9e-99d9-44fc-8a77-c951d0022ad3.png)
 
+![image](https://user-images.githubusercontent.com/24622526/127778551-2b30626e-e2a4-4800-8b36-cc1edb357065.png)
+
 
 Create our own quality gates. Sonar >> Quality Gates >> Create
 
