@@ -78,7 +78,7 @@ Step-4: create webhook
       
 ![image](https://user-images.githubusercontent.com/24622526/127778846-b797733d-198a-42b4-8974-928477347770.png)
 
-![image](https://user-images.githubusercontent.com/24622526/127778902-84936604-796e-4b23-b9ce-8ba2fca75225.png)
+![image](https://user-images.githubusercontent.com/24622526/127779987-f5771d3d-f609-4b4c-a471-a78290e7aecd.png)
 
 
 Step-5: Install maven on Jenkins
