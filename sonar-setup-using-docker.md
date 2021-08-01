@@ -16,7 +16,7 @@ Step-5: update maven pom.xml file with below snippet
             
 Step-6: Run the maven command
 
-      mvn clean package org.codehaus.mojo:sonar-maven-plugin:3.7.0.1746:sonar
+      mvn clean package org.codehaus.mojo:sonar-maven-plugin:3.7.0.1746:sonar -DreleaseVersion=1.0
       
       or - without updating pom.xml file
       
@@ -24,6 +24,22 @@ Step-6: Run the maven command
       
       
 Sample project: https://github.com/venkatasykam/DevOpsWebApp/blob/web/pom.xml
+
+
+#### Maven installation on ubuntu
+
+      apt update -y && apt upgrade -y && apt install openjdk-8-jdk -y
+      
+      java -version
+      
+      find / -name "tools.jar"
+      
+      export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+      
+      sudo apt install maven -y
+      
+      mvn -v
+
             
 
       
