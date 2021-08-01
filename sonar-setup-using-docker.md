@@ -8,6 +8,9 @@ Step-3: Install sonar using docker image: 'sudo docker run -d --name sonarqube -
 
 Step-4: Check the sonar and open the URL in any browser: http://public-ip-address:9000
 
+      Default username: admin
+      Default password: admin
+
 Step-5: update maven pom.xml file with below snippet
 
       Add the below line to <properties> section
@@ -58,7 +61,19 @@ Step-3: Configure Sonar in Jenkins
       
 ![image](https://user-images.githubusercontent.com/24622526/127777517-aa234189-a9f4-435c-91e3-372eb60f5197.png)
 
-Step-4: Install maven on Jenkins
+Step-4: create webhook
+
+      Login to sonar with admin user: Administration > Configuration > Webhooks > Create
+      
+![image](https://user-images.githubusercontent.com/24622526/127778846-b797733d-198a-42b4-8974-928477347770.png)
+
+![image](https://user-images.githubusercontent.com/24622526/127778902-84936604-796e-4b23-b9ce-8ba2fca75225.png)
+
+
+
+      
+
+Step-5: Install maven on Jenkins
 
       Maven Jenkins >> Global Tool Configuration >> Maven >> Add Maven 
       
@@ -66,7 +81,7 @@ Step-4: Install maven on Jenkins
       
 ![image](https://user-images.githubusercontent.com/24622526/127777598-09cc47ac-6183-4402-8260-10c310cda7ca.png)
 
-Step-5: Configure job in jenkins
+Step-6: Configure job in jenkins
 
       New Item >> Pipeline >> copy and paste the below snippet in Job configuration
 
@@ -102,7 +117,7 @@ Step-5: Configure job in jenkins
           }
       }
 
-Step-6: Run the Jenkins job with default sonar quality gates
+Step-7: Run the Jenkins job with default sonar quality gates
 
 ![image](https://user-images.githubusercontent.com/24622526/127778246-82cc7d9e-99d9-44fc-8a77-c951d0022ad3.png)
 
@@ -130,6 +145,8 @@ Update it as "Default" one
 
 ![image](https://user-images.githubusercontent.com/24622526/127778484-f204d46e-8bc7-448b-8dd3-de45619e7093.png)
 
+![image](https://user-images.githubusercontent.com/24622526/127778633-d33bce62-2af2-4e02-85f4-91a03c02072c.png)
 
 
+![image](https://user-images.githubusercontent.com/24622526/127779461-c9666cfb-b4f9-4c92-8bc1-0ebfa76b3c23.png)
 
