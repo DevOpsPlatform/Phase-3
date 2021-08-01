@@ -47,11 +47,13 @@ Sample project: https://github.com/venkatasykam/DevOpsWebApp/blob/web/pom.xml
 
 Step-1: Install Jenkins using docker
 
-      sudo docker run -p 8080:8080 -p 50000:50000 jenkins/jenkins:latest
+      Default location of docker volumes: /var/lib/docker/volumes
+      
+      docker run -d -p 8080:8080 --name jenkins -v jenkins:/var/jenkins_home jenkins/jenkins:latest
       
 Step-2: Install sonarqube scanner plugin
 
-      Manage Jenkins >> Manage Plugin >> Available - search for 'scanner' >> select sonarquve scanner plugin >> install without restart
+      Manage Jenkins >> Manage Plugin >> Available - search for 'sonarqube scanner' >> select sonarqube scanner plugin >> install without restart
       
 ![image](https://user-images.githubusercontent.com/24622526/127777873-e6d69b78-eba6-4fea-92b5-d8cdb51f9e99.png)
 
