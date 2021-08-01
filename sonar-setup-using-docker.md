@@ -50,7 +50,7 @@ Step-2: Install sonarqube scanner plugin
 
       Manage Jenkins >> Manage Plugin >> Available - search for 'scanner' >> select sonarquve scanner plugin >> install without restart
       
-![image](https://user-images.githubusercontent.com/24622526/127777454-46477d4b-0c8b-4346-adf2-b682a9727371.png)
+![image](https://user-images.githubusercontent.com/24622526/127777873-e6d69b78-eba6-4fea-92b5-d8cdb51f9e99.png)
 
 Step-3: Configure Sonar in Jenkins
 
