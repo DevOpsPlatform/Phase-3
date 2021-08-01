@@ -70,13 +70,14 @@ Step-5: Configure job in jenkins
 
       New Item >> Pipeline >> copy and paste the below snippet in Job configuration
       
-      
+---
+
       pipeline {
           agent any
 
             tools {
                         maven "maven-3.8.1"
-                    }
+            }
 
           stages {
               stage('Clone sources') {
