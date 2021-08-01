@@ -72,7 +72,7 @@ add the token to Jenkins > Manage Jenkins > Manage Credentials > Jenkins > Globa
 ![image](https://user-images.githubusercontent.com/24622526/127779758-99981b16-d7e7-4eaf-bc5a-16f2395e84df.png)
       
 
-Step-4: create webhook
+Step-4: create webhook: http://34.202.161.98:9999/sonarqube-webhook/
 
       Login to sonar with admin user: Administration > Configuration > Webhooks > Create
       
