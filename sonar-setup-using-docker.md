@@ -40,6 +40,64 @@ Sample project: https://github.com/venkatasykam/DevOpsWebApp/blob/web/pom.xml
       
       mvn -v
 
-            
+#### Sonar with Jenkins
 
+Step-1: Install Jenkins using docker
+
+      sudo docker run -p 8080:8080 -p 50000:50000 jenkins/jenkins:latest
       
+Step-2: Install sonarqube scanner plugin
+
+      Manage Jenkins >> Manage Plugin >> Available - search for 'scanner' >> select sonarquve scanner plugin >> install without restart
+      
+![image](https://user-images.githubusercontent.com/24622526/127777454-46477d4b-0c8b-4346-adf2-b682a9727371.png)
+
+Step-3: Configure Sonar in Jenkins
+
+      Manage Jenkins >> Configure System >> SonarQube servers
+      
+![image](https://user-images.githubusercontent.com/24622526/127777517-aa234189-a9f4-435c-91e3-372eb60f5197.png)
+
+Step-4: Install maven on Jenkins
+
+      Maven Jenkins >> Global Tool Configuration >> Maven >> Add Maven 
+      
+      Name: maven-3.8.1
+      
+![image](https://user-images.githubusercontent.com/24622526/127777598-09cc47ac-6183-4402-8260-10c310cda7ca.png)
+
+Step-5: Configure job in jenkins
+
+      New Item >> Pipeline >> copy and paste the below snippet in Job configuration
+      
+      
+      pipeline {
+          agent any
+
+            tools {
+                        maven "maven-3.8.1"
+                    }
+
+          stages {
+              stage('Clone sources') {
+                  steps {
+                      git url: 'https://github.com/venkatasykam/DevOpsWebApp.git'
+                  }
+              }
+
+              stage('SonarQube analysis') {
+                  steps {
+                      withSonarQubeEnv('SonarQube') {
+                          sh "mvn clean package org.codehaus.mojo:sonar-maven-plugin:3.7.0.1746:sonar -DreleaseVersion=1.0"
+                      }
+                  }
+              }
+              stage("Quality gate") {
+                  steps {
+                      waitForQualityGate abortPipeline: true
+                  }
+              }
+          }
+      }
+
+Step-6: Run the Jenkins job  
