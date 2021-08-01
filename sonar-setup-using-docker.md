@@ -49,7 +49,7 @@ Step-1: Install Jenkins using docker
 
       Default location of docker volumes: /var/lib/docker/volumes
       
-      docker run -d -p 8080:8080 --name jenkins -v jenkins:/var/jenkins_home jenkins/jenkins:latest
+      docker run -d -p 9999:8080 --name jenkins -v jenkins:/var/jenkins_home jenkins/jenkins:latest
       
 Step-2: Install sonarqube scanner plugin
 
@@ -72,7 +72,7 @@ add the token to Jenkins > Manage Jenkins > Manage Credentials > Jenkins > Globa
 ![image](https://user-images.githubusercontent.com/24622526/127779758-99981b16-d7e7-4eaf-bc5a-16f2395e84df.png)
       
 
-Step-4: create webhook: http://34.202.161.98:9999/sonarqube-webhook/
+Step-4: create webhook: http://jenkins-public-ip-address:9999/sonarqube-webhook/
 
       Login to sonar with admin user: Administration > Configuration > Webhooks > Create
       
