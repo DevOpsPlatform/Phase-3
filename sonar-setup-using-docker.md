@@ -69,6 +69,9 @@ add the token to Jenkins > Manage Jenkins > Manage Credentials > Jenkins > Globa
  
       Manage Jenkins >> Configure System >> SonarQube servers 
       
+> Note: Don't give slash '/' at end of the URL, ex: wrong url: http://sonar-public-ip-address:9000/ and correct url: http://sonar-public-ip-address:9000
+
+
 ![image](https://user-images.githubusercontent.com/24622526/127779758-99981b16-d7e7-4eaf-bc5a-16f2395e84df.png)
       
 
